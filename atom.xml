@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[George's Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-07-03T17:04:18+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[George J. Song]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Build Octopress Based on Windows 7?]]></title>
+    <link href="http://yoursite.com/blog/2015/07/03/my-first-octopress-blog/"/>
+    <updated>2015-07-03T09:19:28+08:00</updated>
+    <id>http://yoursite.com/blog/2015/07/03/my-first-octopress-blog</id>
+    <content type="html"><![CDATA[<ol>
+<li>What is Octopress?
+
+<ul>
+<li>The official site for Octopress is <a href="http://octopress.org/">Octopress.org</a></li>
+<li>The Octopress is a framework designed for Jekyll, the static blogging engine powering Github pages.</li>
+</ul>
+</li>
+<li>Prepare for development environment build.
+
+<ul>
+<li>My experience for Octopress is based on Windows 7. For Mac or other OS, please take reference via Internet.</li>
+<li>Before you began to install Octopress, you need to prepare the following software installer.
+
+<ul>
+<li>Git. Git is used to clone project code from Github.</li>
+<li>Ruby. While Ruby is the basis for Octopress, it will resolve dependencies for project.</li>
+<li>DevKit. We can know sth. from the name, Kit of the development.</li>
+<li>Python. We should choose Python 2, I think.</li>
+<li>Octopress. <a href="git://github.com/imathis/octopress.git">Github Address</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Installation Steps.
+
+<ul>
+<li>Git
+
+<blockquote><p>Download Git, hit the next step by step.</p></blockquote></li>
+<li>Ruby
+
+<blockquote><p>The same to Git installation steps, but don&rsquo;t forget to check &ldquo;Add Ruby executables to your PATH&rdquo;.</p></blockquote></li>
+<li>DevKit
+
+<blockquote><p>The download of DevKit can be extracted to somewhere of your pc, but the path could not contain any space or Chinese characters.
+Here we choose D:\DevKit\ to extract and execute the following commands in Windows/Cmd
+<br> cd DevKit
+<br> ruby dk.rb init
+<br> ruby dk.rb install</p></blockquote></li>
+<li>Python
+
+<blockquote><p>We should choose Python 2 not 3.
+<br> While the Octopress choose <a href="http://pygments.org/">Pygments</a> in Python to highlight code.
+<br> To instal Pygments, you need to cd to Scripts directory in Python, then excute below command.
+<pre>easy_install</pre></p></blockquote></li>
+<li>Octopress
+
+<blockquote><p>Firstly, you should clone Github project to your local. Execute following commands.
+<pre>cd D:\GitProject
+git clone git://github.com/imathis/octopress.git octopress</pre>
+Then, we need to install dependencies of the Octopress. If you are in Heaven, you need to use following commands to update dependency source.
+<pre>gem sources -a <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
+gem sources &ndash;remove <a href="https://rubygems.org/">https://rubygems.org/</a>
+gem sources -l</pre>
+Modify the first line of Gemfile, <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
+<br>cd to the Octopress directory, use the following commands to install dependencies.
+<pre>gem install bundler
+bundle install</pre>
+Now, Let&rsquo;s try to install default theme of Octopress.
+<pre>rake install</pre>
+Use this command to take a preview.
+<pre>rake preview</pre></p></blockquote></li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
