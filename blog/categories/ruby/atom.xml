@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | George's Blog]]></title>
   <link href="http://yoursite.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-07-03T17:04:18+08:00</updated>
+  <updated>2015-07-07T16:58:34+08:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[George J. Song]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Write an Octopress Blog]]></title>
+    <link href="http://yoursite.com/blog/2015/07/07/write-octopress-blog/"/>
+    <updated>2015-07-07T16:47:18+08:00</updated>
+    <id>http://yoursite.com/blog/2015/07/07/write-octopress-blog</id>
+    <content type="html"><![CDATA[<p>Hello Everyone,
+<br>In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command.</p>
+
+<pre>
+rake new_post['your file name']
+</pre>
+
+
+<p>Then, Octopress will generate markdown file.
+<br>Now, we can edit markdown file.
+<br>
+<br>After writing some Octopress blogs, we can deploy and push sources to github.
+<br>Before you push your source to github, you&rsquo;d better have a github repository named as &ldquo;yourusername.github.com&rdquo;. i.e. My github rep. is georgedl001.github.com.
+<br>
+cd to your octopress directory and execute following command.</p>
+
+<pre>
+rake setup_github_pages
+</pre>
+
+
+<p>Then, enter the git address by promotion.
+<br>Execute rake deploy to push local src to github.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Build Octopress Based on Windows 7?]]></title>

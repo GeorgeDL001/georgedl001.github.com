@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>How to Build Octopress Based on Windows 7? - George's Blog</title>
+  <title>Write an Octopress Blog - George's Blog</title>
   <meta name="author" content="George J. Song">
 
   
-  <meta name="description" content="What is Octopress? The official site for Octopress is Octopress.org
-The Octopress is a framework designed for Jekyll, the static blogging engine &hellip;">
+  <meta name="description" content="Hello Everyone,
+In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command. rake &hellip;">
   <meta name="keywords" content="Octopress">
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ The Octopress is a framework designed for Jekyll, the static blogging engine &he
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/blog/2015/07/03/my-first-octopress-blog/">
+  <link rel="canonical" href="http://yoursite.com/blog/2015/07/07/write-octopress-blog/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="George's Blog" type="application/atom+xml">
@@ -70,7 +70,7 @@ The Octopress is a framework designed for Jekyll, the static blogging engine &he
   
   <header>
     
-      <h1 class="entry-title">How to Build Octopress Based on Windows 7?</h1>
+      <h1 class="entry-title">Write an Octopress Blog</h1>
     
     
       <p class="meta">
@@ -79,80 +79,36 @@ The Octopress is a framework designed for Jekyll, the static blogging engine &he
 
 
 
-<time class='entry-date' datetime='2015-07-03T09:19:28+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 am</span></time>
+<time class='entry-date' datetime='2015-07-07T16:47:18+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:47 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><ol>
-<li>What is Octopress?
+<div class="entry-content"><p>Hello Everyone,
+<br>In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command.</p>
 
-<ul>
-<li>The official site for Octopress is <a href="http://octopress.org/">Octopress.org</a></li>
-<li>The Octopress is a framework designed for Jekyll, the static blogging engine powering Github pages.</li>
-</ul>
-</li>
-<li>Prepare for development environment build.
+<pre>
+rake new_post['your file name']
+</pre>
 
-<ul>
-<li>My experience for Octopress is based on Windows 7. For Mac or other OS, please take reference via Internet.</li>
-<li>Before you began to install Octopress, you need to prepare the following software installer.
 
-<ul>
-<li>Git. Git is used to clone project code from Github.</li>
-<li>Ruby. While Ruby is the basis for Octopress, it will resolve dependencies for project.</li>
-<li>DevKit. We can know sth. from the name, Kit of the development.</li>
-<li>Python. We should choose Python 2, I think.</li>
-<li>Octopress. <a href="git://github.com/imathis/octopress.git">Github Address</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Installation Steps.
+<p>Then, Octopress will generate markdown file.
+<br>Now, we can edit markdown file.
+<br>
+<br>After writing some Octopress blogs, we can deploy and push sources to github.
+<br>Before you push your source to github, you&rsquo;d better have a github repository named as &ldquo;yourusername.github.com&rdquo;. i.e. My github rep. is georgedl001.github.com.
+<br>
+cd to your octopress directory and execute following command.</p>
 
-<ul>
-<li>Git
+<pre>
+rake setup_github_pages
+</pre>
 
-<blockquote><p>Download Git, hit the next step by step.</p></blockquote></li>
-<li>Ruby
 
-<blockquote><p>The same to Git installation steps, but don&rsquo;t forget to check &ldquo;Add Ruby executables to your PATH&rdquo;.</p></blockquote></li>
-<li>DevKit
-
-<blockquote><p>The download of DevKit can be extracted to somewhere of your pc, but the path could not contain any space or Chinese characters.
-Here we choose D:\DevKit\ to extract and execute the following commands in Windows/Cmd
-<br> cd DevKit
-<br> ruby dk.rb init
-<br> ruby dk.rb install</p></blockquote></li>
-<li>Python
-
-<blockquote><p>We should choose Python 2 not 3.
-<br> While the Octopress choose <a href="http://pygments.org/">Pygments</a> in Python to highlight code.
-<br> To instal Pygments, you need to cd to Scripts directory in Python, then excute below command.
-<pre>easy_install</pre></p></blockquote></li>
-<li>Octopress
-
-<blockquote><p>Firstly, you should clone Github project to your local. Execute following commands.
-<pre>cd D:\GitProject
-git clone git://github.com/imathis/octopress.git octopress</pre>
-Then, we need to install dependencies of the Octopress. If you are in Heaven, you need to use following commands to update dependency source.
-<pre>gem sources -a <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
-gem sources &ndash;remove <a href="https://rubygems.org/">https://rubygems.org/</a>
-gem sources -l</pre>
-Modify the first line of Gemfile, <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
-<br>cd to the Octopress directory, use the following commands to install dependencies.
-<pre>gem install bundler
-bundle install</pre>
-Now, Let&rsquo;s try to install default theme of Octopress.
-<pre>rake install</pre>
-Use this command to take a preview.
-<pre>rake preview</pre></p></blockquote></li>
-</ul>
-</li>
-</ol>
-
+<p>Then, enter the git address by promotion.
+<br>Execute rake deploy to push local src to github.</p>
 </div>
 
 
@@ -168,7 +124,7 @@ Use this command to take a preview.
 
 
 
-<time class='entry-date' datetime='2015-07-03T09:19:28+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 am</span></time>
+<time class='entry-date' datetime='2015-07-07T16:47:18+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:47 pm</span></time>
       
 
 <span class="categories">
@@ -189,8 +145,8 @@ Use this command to take a preview.
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/07/03/my-first-octopress-blog/" title="Previous Post: How to Build Octopress based on Windows 7?">&laquo; How to Build Octopress based on Windows 7?</a>
       
-        <a class="basic-alignment right" href="/blog/2015/07/07/write-octopress-blog/" title="Next Post: Write An Octopress Blog">Write An Octopress Blog &raquo;</a>
       
     </p>
   </footer>

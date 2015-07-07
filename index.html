@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="George's Blog">
-  
+  <meta name="keywords" content="Ruby,C/C++,Grails,Groovy,Java,Asp.Net,C#">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -66,6 +66,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/07/07/write-octopress-blog/">Write an Octopress Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-07-07T16:47:18+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:47 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hello Everyone,
+<br>In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command.</p>
+
+<pre>
+rake new_post['your file name']
+</pre>
+
+
+<p>Then, Octopress will generate markdown file.
+<br>Now, we can edit markdown file.
+<br>
+<br>After writing some Octopress blogs, we can deploy and push sources to github.
+<br>Before you push your source to github, you&rsquo;d better have a github repository named as &ldquo;yourusername.github.com&rdquo;. i.e. My github rep. is georgedl001.github.com.
+<br>
+cd to your octopress directory and execute following command.</p>
+
+<pre>
+rake setup_github_pages
+</pre>
+
+
+<p>Then, enter the git address by promotion.
+<br>Execute rake deploy to push local src to github.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -175,6 +226,10 @@ Use this command to take a preview.
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/07/07/write-octopress-blog/">Write an Octopress Blog</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/07/03/my-first-octopress-blog/">How to Build Octopress Based on Windows 7?</a>
       </li>
     
@@ -187,7 +242,7 @@ Use this command to take a preview.
 <section> 
   <h1>Categories</h1> 
   <ul id="categories"> 
-    <li class='category'><a href='/blog/categories/ruby/'>ruby (1)</a></li>
+    <li class='category'><a href='/blog/categories/ruby/'>ruby (2)</a></li>
  
   </ul> 
 </section><!doctype html>
@@ -198,7 +253,7 @@ Use this command to take a preview.
 <meta charset="utf-8">
 <meta name="keywords" content="Html日历插件，Html精美日历插件，Jquery多功能日历插件" />
 <meta name="description" content="Html日历插件，多功能-彭亚欧个人博客代码演示中心" />
-<title>Html日历插件</title>
+<title>Html Calendar Plugin</title>
 <style type="text/css">
 body {
 	background-color: #efefef;
