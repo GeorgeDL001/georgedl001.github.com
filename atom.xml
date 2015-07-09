@@ -4,7 +4,7 @@
   <title><![CDATA[George's Blog]]></title>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-07-07T16:58:34+08:00</updated>
+  <updated>2015-07-09T15:48:06+08:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[George J. Song]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[WAMP Basic Configuration]]></title>
+    <link href="http://yoursite.com/blog/2015/07/09/wamp-basic-configuration/"/>
+    <updated>2015-07-09T14:53:49+08:00</updated>
+    <id>http://yoursite.com/blog/2015/07/09/wamp-basic-configuration</id>
+    <content type="html"><![CDATA[<p>Today, Let&rsquo;s talk something about php and we will perform a list of blogs which will help the freshmen to learn php and to write something and Initphp framework.<br/>
+Before you began to learn php, you need to prepare the environments ready. For freshmen, the basic middleware for learning php is Apache, also, the apache is so great, it can be used both in learning and business.<br/>
+Currently, it can be very easy to setup php environments in both windows and Linux or Mac machine. Yes, it is, LAMP or WAMP, one step for php environments. We will catch details on how to make small configurations in WAMP.<br/></p>
+
+<ol>
+<li>Install WAMP
+
+<ul>
+<li>We can download WAMP setup files from Internet, msi file is okay.</li>
+<li>Install WAMP to your local PC with some directory. For me, it is &ldquo;D:\wamp&rdquo;.</li>
+<li>If your PC has MySQL service previously, you need to make some configurations after WAMP install.</li>
+<li>If you would like you phpadmin connect your local mysql service prevously, you need to modify config.inc.php in wamp/apps/phpmyadmin/.
+<pre>
+$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;user&rsquo;] = &lsquo;root&rsquo;;   // your mysql account
+$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;password&rsquo;] = &lsquo;root&rsquo;;   // your mysql password
+$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;AllowNoPassword&rsquo;] = false; // Change from true to false if your mysql is needed for passcode.
+</pre></li>
+<li>Modify service section in wampmanager.conf in wamp/
+<pre>
+ServiceMysql = &ldquo;MySQL56&rdquo;    // Change from wampmysql to your mysqlinstance name.
+</pre></li>
+</ul>
+</li>
+<li>After configuration in Step 1, you can access you wamp.</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Write an Octopress Blog]]></title>
@@ -86,9 +120,11 @@ rake setup_github_pages
 
 <blockquote><p>The download of DevKit can be extracted to somewhere of your pc, but the path could not contain any space or Chinese characters.
 Here we choose D:\DevKit\ to extract and execute the following commands in Windows/Cmd
+<pre>
 <br> cd DevKit
 <br> ruby dk.rb init
-<br> ruby dk.rb install</p></blockquote></li>
+<br> ruby dk.rb install
+</pre></p></blockquote></li>
 <li>Python
 
 <blockquote><p>We should choose Python 2 not 3.

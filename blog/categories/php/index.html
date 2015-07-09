@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>George's Blog</title>
+  <title>Category: Php - George's Blog</title>
   <meta name="author" content="George J. Song">
 
   
-  <meta name="description" content="George's Blog">
-  <meta name="keywords" content="Ruby,C/C++,Grails,Groovy,Java,Asp.Net,C#">
+  <meta name="description" content="Category: php">
+  
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/blog/categories/php/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="George's Blog" type="application/atom+xml">
@@ -64,217 +64,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/07/09/wamp-basic-configuration/">WAMP Basic Configuration</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-07-09T14:53:49+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>2:53 pm</span></time>
-        
-      </p>
+    <h1 class="entry-title">Category: Php</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p>Today, Let&rsquo;s talk something about php and we will perform a list of blogs which will help the freshmen to learn php and to write something and Initphp framework.<br/>
-Before you began to learn php, you need to prepare the environments ready. For freshmen, the basic middleware for learning php is Apache, also, the apache is so great, it can be used both in learning and business.<br/>
-Currently, it can be very easy to setup php environments in both windows and Linux or Mac machine. Yes, it is, LAMP or WAMP, one step for php environments. We will catch details on how to make small configurations in WAMP.<br/></p>
 
-<ol>
-<li>Install WAMP
+  
+  <h2>2015</h2>
 
-<ul>
-<li>We can download WAMP setup files from Internet, msi file is okay.</li>
-<li>Install WAMP to your local PC with some directory. For me, it is &ldquo;D:\wamp&rdquo;.</li>
-<li>If your PC has MySQL service previously, you need to make some configurations after WAMP install.</li>
-<li>If you would like you phpadmin connect your local mysql service prevously, you need to modify config.inc.php in wamp/apps/phpmyadmin/.
-<pre>
-$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;user&rsquo;] = &lsquo;root&rsquo;;   // your mysql account
-$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;password&rsquo;] = &lsquo;root&rsquo;;   // your mysql password
-$cfg[&lsquo;Servers&rsquo;][$i][&lsquo;AllowNoPassword&rsquo;] = false; // Change from true to false if your mysql is needed for passcode.
-</pre></li>
-<li>Modify service section in wampmanager.conf in wamp/
-<pre>
-ServiceMysql = &ldquo;MySQL56&rdquo;    // Change from wampmysql to your mysqlinstance name.
-</pre></li>
-</ul>
-</li>
-<li>After configuration in Step 1, you can access you wamp.</li>
-</ol>
+<article>
+  
+<h1><a href="/blog/2015/07/09/wamp-basic-configuration/">WAMP Basic Configuration</a></h1>
+<time datetime="2015-07-09T14:53:49+08:00" pubdate><span class='month'>Jul</span> <span class='day'>09</span> <span class='year'>2015</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/php/'>php</a></span>
+</footer>
+
+
+</article>
 
 </div>
+
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/07/07/write-octopress-blog/">Write an Octopress Blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-07-07T16:47:18+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:47 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hello Everyone,
-<br>In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command.</p>
-
-<pre>
-rake new_post['your file name']
-</pre>
-
-
-<p>Then, Octopress will generate markdown file.
-<br>Now, we can edit markdown file.
-<br>
-<br>After writing some Octopress blogs, we can deploy and push sources to github.
-<br>Before you push your source to github, you&rsquo;d better have a github repository named as &ldquo;yourusername.github.com&rdquo;. i.e. My github rep. is georgedl001.github.com.
-<br>
-cd to your octopress directory and execute following command.</p>
-
-<pre>
-rake setup_github_pages
-</pre>
-
-
-<p>Then, enter the git address by promotion.
-<br>Execute rake deploy to push local src to github.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/07/03/my-first-octopress-blog/">How to Build Octopress Based on Windows 7?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-07-03T09:19:28+08:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>9:19 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ol>
-<li>What is Octopress?
-
-<ul>
-<li>The official site for Octopress is <a href="http://octopress.org/">Octopress.org</a></li>
-<li>The Octopress is a framework designed for Jekyll, the static blogging engine powering Github pages.</li>
-</ul>
-</li>
-<li>Prepare for development environment build.
-
-<ul>
-<li>My experience for Octopress is based on Windows 7. For Mac or other OS, please take reference via Internet.</li>
-<li>Before you began to install Octopress, you need to prepare the following software installer.
-
-<ul>
-<li>Git. Git is used to clone project code from Github.</li>
-<li>Ruby. While Ruby is the basis for Octopress, it will resolve dependencies for project.</li>
-<li>DevKit. We can know sth. from the name, Kit of the development.</li>
-<li>Python. We should choose Python 2, I think.</li>
-<li>Octopress. <a href="git://github.com/imathis/octopress.git">Github Address</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Installation Steps.
-
-<ul>
-<li>Git
-
-<blockquote><p>Download Git, hit the next step by step.</p></blockquote></li>
-<li>Ruby
-
-<blockquote><p>The same to Git installation steps, but don&rsquo;t forget to check &ldquo;Add Ruby executables to your PATH&rdquo;.</p></blockquote></li>
-<li>DevKit
-
-<blockquote><p>The download of DevKit can be extracted to somewhere of your pc, but the path could not contain any space or Chinese characters.
-Here we choose D:\DevKit\ to extract and execute the following commands in Windows/Cmd
-<pre>
-<br> cd DevKit
-<br> ruby dk.rb init
-<br> ruby dk.rb install
-</pre></p></blockquote></li>
-<li>Python
-
-<blockquote><p>We should choose Python 2 not 3.
-<br> While the Octopress choose <a href="http://pygments.org/">Pygments</a> in Python to highlight code.
-<br> To instal Pygments, you need to cd to Scripts directory in Python, then excute below command.
-<pre>easy_install</pre></p></blockquote></li>
-<li>Octopress
-
-<blockquote><p>Firstly, you should clone Github project to your local. Execute following commands.
-<pre>cd D:\GitProject
-git clone git://github.com/imathis/octopress.git octopress</pre>
-Then, we need to install dependencies of the Octopress. If you are in Heaven, you need to use following commands to update dependency source.
-<pre>gem sources -a <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
-gem sources &ndash;remove <a href="https://rubygems.org/">https://rubygems.org/</a>
-gem sources -l</pre>
-Modify the first line of Gemfile, <a href="https://ruby.taobao.org/">https://ruby.taobao.org/</a>
-<br>cd to the Octopress directory, use the following commands to install dependencies.
-<pre>gem install bundler
-bundle install</pre>
-Now, Let&rsquo;s try to install default theme of Octopress.
-<pre>rake install</pre>
-Use this command to take a preview.
-<pre>rake preview</pre></p></blockquote></li>
-</ul>
-</li>
-</ol>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -811,6 +634,7 @@ body {
 </section>
   
 </aside>
+
 
     </div>
   </div>
