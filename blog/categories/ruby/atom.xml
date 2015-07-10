@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ruby | George's Blog]]></title>
-  <link href="http://yoursite.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-07-09T15:48:06+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://georgedl001.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://georgedl001.github.io/"/>
+  <updated>2015-07-10T17:15:14+08:00</updated>
+  <id>http://georgedl001.github.io/</id>
   <author>
     <name><![CDATA[George J. Song]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Write an Octopress Blog]]></title>
-    <link href="http://yoursite.com/blog/2015/07/07/write-octopress-blog/"/>
+    <link href="http://georgedl001.github.io/blog/2015/07/07/write-octopress-blog/"/>
     <updated>2015-07-07T16:47:18+08:00</updated>
-    <id>http://yoursite.com/blog/2015/07/07/write-octopress-blog</id>
+    <id>http://georgedl001.github.io/blog/2015/07/07/write-octopress-blog</id>
     <content type="html"><![CDATA[<p>Hello Everyone,
 <br>In previous blog, we build our octopress environments. Now, Let&rsquo;s write our new octopress blog use following command.</p>
 
@@ -46,9 +46,9 @@ rake setup_github_pages
   
   <entry>
     <title type="html"><![CDATA[How to Build Octopress Based on Windows 7?]]></title>
-    <link href="http://yoursite.com/blog/2015/07/03/my-first-octopress-blog/"/>
+    <link href="http://georgedl001.github.io/blog/2015/07/03/my-first-octopress-blog/"/>
     <updated>2015-07-03T09:19:28+08:00</updated>
-    <id>http://yoursite.com/blog/2015/07/03/my-first-octopress-blog</id>
+    <id>http://georgedl001.github.io/blog/2015/07/03/my-first-octopress-blog</id>
     <content type="html"><![CDATA[<ol>
 <li>What is Octopress?
 
