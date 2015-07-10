@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Queueing | George's Blog]]></title>
   <link href="http://georgedl001.github.io/blog/categories/queueing/atom.xml" rel="self"/>
   <link href="http://georgedl001.github.io/"/>
-  <updated>2015-07-10T17:15:14+08:00</updated>
+  <updated>2015-07-10T17:21:12+08:00</updated>
   <id>http://georgedl001.github.io/</id>
   <author>
     <name><![CDATA[George J. Song]]></name>
@@ -18,7 +18,7 @@
     <link href="http://georgedl001.github.io/blog/2015/07/10/m-m-1-model/"/>
     <updated>2015-07-10T17:02:26+08:00</updated>
     <id>http://georgedl001.github.io/blog/2015/07/10/m-m-1-model</id>
-    <content type="html"><![CDATA[<p>Recently, I&rsquo;m learning some basic informations about Queueing theory due to project need. Today, I would like to write sth. down about M/M/1 queue.</p>
+    <content type="html"><![CDATA[<p>Recently, I&rsquo;m learning some basic informations about Queueing theory due to project need. Today, I would like to write sth. down about M/M/1 queue. Of course, the M/M/1 queue can be searched by Google, Wikipedia or other web sites, but I still need take a record.</p>
 ]]></content>
   </entry>
   
